@@ -1,12 +1,17 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroSection } from "@/components/ui/hero-section";
+import { FeaturesSection } from "@/components/ui/features-section";
+import { QuestBoard } from "@/components/ui/quest-board";
+import { SkillTreePreview } from "@/components/ui/skill-tree-preview";
+import { CTASection } from "@/components/ui/cta-section";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <HeroSection />
+      <FeaturesSection />
+      <QuestBoard />
+      <SkillTreePreview />
+      <CTASection />
     </div>
   );
 };
